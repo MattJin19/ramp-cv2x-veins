@@ -1,0 +1,187 @@
+version 2
+run WithBeaconing-0-20201115-17:40:48-10236
+attr configname WithBeaconing
+attr datetime 20201115-17:40:48
+attr experiment WithBeaconing
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network RSUExampleScenario
+attr processid 10236
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.rsu[*].appl.sendBeacons true
+param *.node[*].appl.sendBeacons true
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"erlangen.launchd.xml\")"
+param *.rsu[0].mobility.x 2000
+param *.rsu[0].mobility.y 2000
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons false
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 1s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 300m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"TraCIDemo11p\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 0.1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 0
+param *.node[*0].veinsmobility.accidentStart 73s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+vector 0 RSUExampleScenario.node[0].veinsmobility posx ETV
+vector 1 RSUExampleScenario.node[0].veinsmobility posy ETV
+vector 2 RSUExampleScenario.node[1].veinsmobility posx ETV
+vector 3 RSUExampleScenario.node[1].veinsmobility posy ETV
+vector 4 RSUExampleScenario.node[0].veinsmobility speed ETV
+vector 5 RSUExampleScenario.node[1].veinsmobility speed ETV
+vector 6 RSUExampleScenario.node[0].veinsmobility acceleration ETV
+vector 7 RSUExampleScenario.node[0].veinsmobility co2emission ETV
+vector 8 RSUExampleScenario.node[1].veinsmobility acceleration ETV
+vector 9 RSUExampleScenario.node[1].veinsmobility co2emission ETV
+0	11	1	48.407796666299
+0	321	2	48.407796666299
+0	631	3	61.856932487353
+0	941	4	75.873602698936
+0	1251	5	89.136722049106
+0	1561	6	102.24402817632
+0	1871	7	113.93034068202
+0	2181	8	121.89690118473
+0	2491	9	125.77128815835
+0	2801	10	125.97649561208
+0	3111	11	127.46189863091
+0	3421	12	130.76215488884
+1	11	1	28.571856717077
+1	321	2	28.571856717077
+1	631	3	34.725024101097
+1	941	4	41.137846391392
+1	1251	5	47.205908643248
+1	1561	6	53.202684170495
+1	1871	7	58.549335279259
+1	2181	8	62.194147920035
+1	2491	9	63.966734045742
+1	2801	10	64.06061932046
+1	3111	11	64.811851117041
+1	3421	12	66.533380833831
+2	11	1	30.099491829414
+2	321	2	30.099491829414
+2	631	3	44.093308655455
+2	941	4	58.413279647334
+2	1251	5	72.940132632796
+2	1561	6	86.289803899477
+2	1871	7	100.13586760399
+2	2181	8	113.46449429635
+2	2491	9	127.45479965392
+2	2801	10	141.20794262782
+2	3111	11	154.51280853833
+2	3421	12	167.90400534761
+3	11	1	68.133230370666
+3	321	2	68.133230370666
+3	631	3	68.087211839997
+3	941	4	68.040120754523
+3	1251	5	67.992349339623
+3	1561	6	67.948449075368
+3	1871	7	67.902916429404
+3	2181	8	67.859085370027
+3	2491	9	67.959544728437
+3	2801	10	69.377862715352
+3	3111	11	69.361594283426
+3	3421	12	69.345220290995
+4	321	2	14.789478198948
+4	631	3	15.413573130217
+4	941	4	14.584923305801
+4	1251	5	14.413581719642
+4	1561	6	12.850971715121
+4	1871	7	8.7605088120948
+4	2181	8	4.2605088120948
+4	2491	9	0.22565845148913
+4	2801	10	1.6648274062927
+4	3111	11	3.7226988083245
+4	3421	12	5.0263585577514
+5	321	2	13.99521132697
+5	631	3	14.321397994469
+5	941	4	14.528300604095
+5	1251	5	13.351001577719
+5	1561	6	13.847443481662
+5	1871	7	13.329954906284
+5	2181	8	13.996085589227
+5	2491	9	13.848547147388
+5	2801	10	13.304865910519
+5	3111	11	13.391196809277
+5	3421	12	13.850602771166
+6	631	3	0.62409493126906
+6	941	4	-0.82864982441533
+6	1251	5	-0.17134158615954
+6	1561	6	-1.5626100045206
+6	1871	7	-4.0904629030265
+6	2181	8	-4.5
+6	2491	9	-4.0348503606057
+6	2801	10	1.4391689548036
+6	3111	11	2.0578714020317
+6	3421	12	1.3036597494269
+7	631	3	4.5101431359823
+7	941	4	0.973
+7	1251	5	1.4867496026317
+7	1561	6	0.973
+7	1871	7	0.973
+7	2181	8	0.973
+7	2491	9	0.973
+7	2801	10	1.7681658080312
+7	3111	11	3.1406102418837
+7	3421	12	2.9433938667476
+8	631	3	0.32618666749913
+8	941	4	0.20690260962583
+8	1251	5	-1.1772990263766
+8	1561	6	0.49644190394319
+8	1871	7	-0.5174885753775
+8	2181	8	0.66613068294246
+8	2491	9	-0.1475384418387
+8	2801	10	-0.54368123686872
+8	3111	11	0.086330898758025
+8	3421	12	0.45940596188884
+9	631	3	3.1980329120646
+9	941	4	2.8185583610952
+9	1251	5	0.973
+9	1561	6	3.6800343480601
+9	1871	7	0.973
+9	2181	8	4.2853427635155
+9	2491	9	1.530993973745
+9	2801	10	0.973
+9	3111	11	2.2564405918424
+9	3421	12	3.5571068655941
+
